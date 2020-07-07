@@ -42,7 +42,7 @@ final class NewlinesAtStartOfClassBodySniff implements Sniff
             $phpcsFile->addFixableError(
                 'The opening brace of a class body must not be followed by more than one newline.',
                 array_shift($newlineTokenPointers),
-                'NewlinesAtStartOfClassBody'
+                'Found'
             );
             $this->fixSuperfluousNewlineTokens($phpcsFile, $newlineTokenPointers);
         }
