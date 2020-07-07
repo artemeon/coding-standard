@@ -1,1 +1,3 @@
-# phpcs-standard
+# ARTEMEON Coding Standard
+
+A CodeSniffer standard for ARTEMEON projects.
