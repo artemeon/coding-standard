@@ -1,0 +1,31 @@
+{
+    "name": "artemeon/coding-standard",
+    "description": "A CodeSniffer standard for ARTEMEON projects",
+    "type": "phpcodesniffer-standard",
+    "require": {
+        "squizlabs/php_codesniffer": "^3.5.5",
+        "phpcompatibility/php-compatibility": "^9.3"
+    },
+    "require-dev": {
+        "dealerdirect/phpcodesniffer-composer-installer": "^0.7.0",
+        "phpunit/phpunit": "^9.2"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "ARTEMEON Management Partner GmbH",
+            "email": "development@artemeon.de"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Artemeon\\CodingStandard\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Artemeon\\CodingStandard\\Tests\\": "tests/",
+            "Artemeon\\CodingStandard\\Tests\\Files\\": "tests/files/"
+        }
+    }
+}
