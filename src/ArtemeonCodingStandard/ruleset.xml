@@ -5,7 +5,7 @@
     <rule ref="PSR12" />
 
     <rule ref="PHPCompatibility" />
-    <config name="testVersion" value="7.2-" />
+    <config name="testVersion" value="7.4-" />
 
     <rule ref="Generic.Files.LineLength">
         <properties>
