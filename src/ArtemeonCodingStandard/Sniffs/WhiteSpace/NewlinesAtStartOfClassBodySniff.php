@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Artemeon\CodingStandard\ArtemeonCodingStandard\Sniffs;
+namespace Artemeon\CodingStandard\ArtemeonCodingStandard\Sniffs\WhiteSpace;
 
 use PHP_CodeSniffer\Files\File;
 use PHP_CodeSniffer\Sniffs\Sniff;
@@ -10,7 +10,7 @@ use PHP_CodeSniffer\Sniffs\Sniff;
 use function array_shift;
 use function count;
 
-final class NewlinesAtStartOfFunctionBodySniff implements Sniff
+final class NewlinesAtStartOfClassBodySniff implements Sniff
 {
     use ConcerningNewlines;
 
@@ -20,7 +20,9 @@ final class NewlinesAtStartOfFunctionBodySniff implements Sniff
     public function register(): array
     {
         return [
-            T_FUNCTION,
+            T_CLASS,
+            T_INTERFACE,
+            T_TRAIT,
         ];
     }
 
@@ -38,9 +40,9 @@ final class NewlinesAtStartOfFunctionBodySniff implements Sniff
 
         if (count($newlineTokenPointers) > 1) {
             $phpcsFile->addFixableError(
-                'The opening brace of a function body must not be followed by more than one newline.',
+                'The opening brace of a class body must not be followed by more than one newline.',
                 array_shift($newlineTokenPointers),
-                'NewlinesAtStartOfFunctionBody'
+                'NewlinesAtStartOfClassBody'
             );
             $this->fixSuperfluousNewlineTokens($phpcsFile, $newlineTokenPointers);
         }

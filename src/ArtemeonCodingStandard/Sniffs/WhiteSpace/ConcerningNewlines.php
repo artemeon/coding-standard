@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Artemeon\CodingStandard\ArtemeonCodingStandard\Sniffs;
+namespace Artemeon\CodingStandard\ArtemeonCodingStandard\Sniffs\WhiteSpace;
 
 use PHP_CodeSniffer\Files\File;
 

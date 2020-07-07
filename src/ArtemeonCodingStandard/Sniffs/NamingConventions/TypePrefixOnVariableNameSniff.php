@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Artemeon\CodingStandard\ArtemeonCodingStandard;
+namespace Artemeon\CodingStandard\ArtemeonCodingStandard\Sniffs\NamingConventions;
 
 use PHP_CodeSniffer\Files\File;
 use PHP_CodeSniffer\Sniffs\Sniff;
