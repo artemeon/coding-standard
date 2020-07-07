@@ -47,7 +47,7 @@ final class TypePrefixOnVariableNameSniff implements Sniff
                 $phpcsFile->addFixableWarning(
                     'Type prefixes on variable names are discouraged.',
                     $stackPtr,
-                    'TypePrefixOnVariableNameDetected'
+                    'Found'
                 );
                 $phpcsFile->fixer->replaceToken(
                     $stackPtr,
