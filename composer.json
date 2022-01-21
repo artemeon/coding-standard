@@ -3,7 +3,7 @@
     "description": "A CodeSniffer standard for ARTEMEON projects",
     "type": "phpcodesniffer-standard",
     "require": {
-        "squizlabs/php_codesniffer": "^3.5.5",
+        "squizlabs/php_codesniffer": "^3.6.2",
         "phpcompatibility/php-compatibility": "^9.3"
     },
     "require-dev": {
