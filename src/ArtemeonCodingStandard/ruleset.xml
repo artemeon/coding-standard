@@ -26,7 +26,9 @@
     </rule>
     <rule ref="Squiz.Scope.StaticThisUsage" />
 
+    <!--
     <rule ref="ArtemeonCodingStandard.NamingConventions.TypePrefixOnVariableName" />
     <rule ref="ArtemeonCodingStandard.WhiteSpace.NewlinesAtStartOfClassBody" />
     <rule ref="ArtemeonCodingStandard.WhiteSpace.NewlinesAtStartOfFunctionBody" />
+    -->
 </ruleset>
